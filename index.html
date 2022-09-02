@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <img src="./img/gradient.png" class='gradient'alt="">
+    <div id="login">
+        <time>12.10pm</time>
+        <text id="head">Report Submission Form</text>
+
+        <span id="info">
+        <span id="info1">
+        <label >Name : </label>
+        <input type="text" name="" id="Name" required>
+        </span>
+        <span id="info2">
+        <label >Password : </label>
+        <input type="password" name="" id="Password" required>
+        </span>
+        <input type="submit" name="" id="Submit" style="    width: 80%;
+        margin: 10px auto;
+        color: #f7f4f5;
+        background: #dd294c;">
+        </span>
+        
+    </div>
+    <div id="form" style="display:none">
+        <time>12.10pm</time>
+        <text>Hey<strong id="name"></strong></text>
+        <img src="./img/Artstation-Character-Portrait-Demo-by-Anthony-Jones.png" id="face">
+
+        <form method="post" name="google-sheet">
+         <label for="UpdateWork">Assigned Work<text style="    font-size: 33px;
+            position: relative;
+            top: 10px;
+            color: #dbdbdb;
+        "> &#x2A</text></label>
+         <textarea id="UpdateWork" name="GivenWork" required></textarea>
+         <label for="UpdateWork">Work Status<text style="    font-size: 33px;
+            position: relative;
+            top: 10px;
+            color: #dbdbdb;
+        "> &#x2A</text></label>
+         <textarea id="UpdateWork" name="FinalWork" required></textarea>
+         <input type="date" name="date" id="date">
+         <input name="Agent" type="text" style="display:none" id="agent">
+         <input name="submitdate" type="text" style="display:none" id="sdate">
+         <input type="submit">
+        </form>
+    </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="./index.js"></script>
+    
+</body>
+</html>
