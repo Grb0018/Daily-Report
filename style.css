@@ -7,7 +7,7 @@
 }
 body{
     background-color: #fef2f4;
-    overflow: hidden;
+    overflow-y: scroll;
 }
 #form{
     height: 85%;
@@ -108,12 +108,10 @@ body{
       left: -21vw;
       top: 55vh;
       overflow: hidden;
-      width: 117vw;
-      overflow-y: scroll;
+      width: 117vw; 
     }
     #form form{
       top:-5%;
-      overflow-y: scroll;
     }
     #face{
       top:7vw;
