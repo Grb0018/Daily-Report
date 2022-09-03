@@ -135,14 +135,12 @@ body{
     }
     #form form{
       top:-5%;
-      overflow-y: scroll;
     }
     #face{
       top:7vw;
     }
   }
   #login{
-    
     height: 717px;
     display: flex;
     flex-direction: column;
