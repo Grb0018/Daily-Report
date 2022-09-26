@@ -249,7 +249,7 @@ document.getElementById('pass').onclick = ()=>{
 			document.getElementById('detail').style.top = '-20%';
 			e.target.src= './img/setting.png';
 			if(screen.availWidth<500){
-				document.getElementById('detail').style.padding = '40% 10%';
+				document.getElementById('detail').style.padding = '60% 10%';
 				document.getElementById('detail').style.top = '-7%';
 			}
 		}
