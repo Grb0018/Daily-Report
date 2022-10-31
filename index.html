@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   
+    <link rel="stylesheet" href="style.css">
+    <script src="./form.js" defer></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <img src="./img/gradient.png" class='gradient'alt="">
+    <div id="login">
+        <time>12.10pm</time>
+        <text id="head">Report Submission Form</text>
+        <span id="info">
+        <span id="info1">
+        <label >Name : </label>
+        <input type="text" name="" id="Name" required>
+        </span>
+        <span id="info2">
+        <label >Password : </label>
+        <input type="password" name="" id="Password" required>
+        </span>
+        <input type="submit" name="" id="Submit" style="    width: 80%;
+        margin: 10px auto;
+        color: #f7f4f5;
+        background: #dd294c;">
+        </span>
+        
+    </div>
+    <div id="form" style="display:none">
+        <div id="menu">
+            <img src="./img/home.png" id="homebtn" style="width: 25px;
+            height: 25px;
+            padding: 7px 12px;
+            border-radius: 15px;
+            filter: drop-shadow(1px 1px 1px lightgrey) invert(1);transition: 1s;">
+            <img src="./img/timetable.png" id="calenderbtn" style="    width: 19px;
+            height: 19px;
+            padding: 6px 12px;
+            border-radius: 15px;
+            filter: drop-shadow(1px 1px 1px lightgrey) invert(1);transition: 1s;">
+            <img src="./img/file.png" id="reportbtn" style="    width: 19px;
+            height: 19px;
+            padding: 6px 12px;
+            border-radius: 15px;
+            filter: drop-shadow(1px 1px 1px lightgrey) invert(1);transition: 1s;">
+            <img src="./img/support.png" id="supportbtn" style="width: 19px;
+            height: 19px;
+            padding: 6px 12px;
+            border-radius: 15px;
+            filter: drop-shadow(1px 1px 1px lightgrey) invert(1);transition: 1s;">
+            </div>
+            <time>12.10pm</time>
+            <text>Hey<strong id="name"></strong></text>
+            <img src="./img/Artstation-Character-Portrait-Demo-by-Anthony-Jones.png" id="face">
+            <img src="./img/setting.png" alt="" id="settings">
+            <button id="pass">Change</button>
+            
+    </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="./index.js" type="module"></script>
+    <script src="./Submission.js" ></script>
+
+
+</body>
+</html>
