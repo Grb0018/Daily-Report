@@ -148,17 +148,18 @@ text-align: center;">Works In Hand</h2><span style="
     width: 95%;
     height: 200px;
     margin-top: 10px;
-    background: aliceblue;
+    background: url('./img/note.png');
+    background-size:cover;
     overflow: hidden;
     overflow-y: scroll;
 ">
   <span style="
-    display: block;
-    height: max-content;
-    background-color: #c9c9bb;
-    width: 90%;
-    min-height: 300px;
-    margin: 10px 5%;
+  display: block;
+  height: max-content;
+  width: 85%;
+  min-height: 300px;
+  margin: 24px 11%;
+  font-family: system-ui;
 "></span>  
 </span>
 </span>`
