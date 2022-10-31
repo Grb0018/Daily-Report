@@ -53,6 +53,7 @@ body{
     overflow-y: scroll;
     padding-bottom: 10%;
     border-bottom-left-radius: 1vw;
+    margin-bottom: 35px;
 }
 #timeUpdate,#workInHand{
   display: flex;
@@ -190,6 +191,7 @@ body{
         flex-wrap: wrap;
         padding-bottom: 10%;
         border-bottom-left-radius: 1vw;
+        margin-bottom: 35px;
     }
     #timeUpdate,#workInHand{
       overflow-y: scroll;
