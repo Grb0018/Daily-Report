@@ -157,9 +157,11 @@ body{
   cursor: pointer;
 }
 @media only screen and (max-width: 600px) {
-    #form{height: 75%;
-    width:85%;
+    #form{
+    height: 85%;
+    width: 85%;
     top: 6%;
+    margin-top: 5px;
     }
     #form textarea{
       height:18vw;
