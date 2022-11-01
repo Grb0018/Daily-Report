@@ -431,7 +431,7 @@ function logallthings(){
 		document.getElementById('logTimeSubmit').style.display='none';
 		var span = document.createElement('span')
 		span.setAttribute('id','infoattan')
-		span.setAttribute('style','display: block;margin-left: 10px;width: 90%;height: 48%;overflow: hidden;padding: 5px;')
+		span.setAttribute('style','display: block;margin-left: 10px;width: 90%;height: max-content;overflow: hidden;padding: 5px;')
 		document.getElementById('timeUpdate').append(span)
 		span.innerHTML+= infoAttandance;
 
