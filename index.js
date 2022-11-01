@@ -277,22 +277,7 @@ function KoyelPurkait(){
 		} 
 
 
-function updatepass(){
-   fcc = cc[0];
-   for (let i = 1; i < fcc.length; i++) {
-	if(' ' + fcc[i].name.toUpperCase() === document.getElementById('name').innerText.toUpperCase()){
-		var mname = document.getElementById('name').innerText.toUpperCase();
-		mname = mname.slice(1,mname.length);
-		firebase.database().ref('Employee/'+ i).set({
-			name: mname,
-			pass: document.getElementById('passgiven').value	
-		  })
-		  .then(fcc=[])
-		  .then(alert('Succesfully Updated'))
-		//   .then(location.reload())
-	}
-   }
-}
+
 
 
 		document.getElementById('Submit').onclick =()=>{
@@ -324,51 +309,55 @@ function updatepass(){
 		}
 		document.getElementById('settings').onclick = (e)=>{
 			if(e.target.getAttribute('src') === './img/close.png'){
-				document.getElementById('detail').children[0].style.display='block';
-				document.getElementById('detail').children[1].style.display='block'
-				document.getElementById('detail').children[2].style.display='block'
-				document.getElementById('detail').children[3].style.display='block'
-				document.getElementById('detail').children[4].style.display='block'
-				document.getElementById('submit').style.display='block';
-				document.getElementById('pass').style.display='none';
-				document.getElementById('passgiven').style.display='none';
-				document.getElementById('intime').style.display='block';
-				document.getElementById('outtime').style.display='block';
-				document.getElementById('inlabel').style.display='block';
-				document.getElementById('outlabel').style.display='block';
-				document.getElementById('Remarks').style.display='block';
-				document.getElementById('date').style.display='block';
-			//	document.getElementById('detail').style.paddingTop= '27%';
-			//	document.getElementById('detail').style.top = '-20%';
-				e.target.src= './img/setting.png';
-				// if(screen.availWidth<500){
-				// 	document.getElementById('detail').style.padding = '40% 10%';
-				// 	document.getElementById('detail').style.top = '-7%';
-				// }
+				e.target.setAttribute('src','./img/setting.png')
+			if(document.getElementById('setbox') !== null){
+				document.getElementById('setbox').remove()
+			}
 			}
 			else{
-				document.getElementById('detail').children[0].style.display='none';
-				document.getElementById('detail').children[1].style.display='none'
-				document.getElementById('detail').children[2].style.display='none'
-				document.getElementById('detail').children[3].style.display='none'
-				document.getElementById('detail').children[4].style.display='none'
-				document.getElementById('submit').style.display='none';
-				document.getElementById('intime').style.display='none';
-				document.getElementById('Remarks').style.display='none';
-				document.getElementById('date').style.display='none';
-				document.getElementById('outtime').style.display='none';
-				document.getElementById('inlabel').style.display='none';
-				document.getElementById('outlabel').style.display='none';
-				document.getElementById('pass').style.display='block';
-				document.getElementById('passgiven').style.display='block';
-			//	document.getElementById('detail').style.top = '-83px';
-			//	document.getElementById('detail').style.padding = '80% 10%';
-			//	document.getElementById('passgiven').style.top = '-150px';
-				e.target.src= './img/close.png';
-				// if(screen.availWidth<500){
-				// 	document.getElementById('detail').style.padding = '100% 10%';
-				// 	document.getElementById('passgiven').style.top = '-160px';
-				// }
+				e.target.setAttribute('src','./img/close.png')
+				var span = document.createElement('span')
+				span.setAttribute('id','setbox')
+				span.setAttribute('style',"    width: 80%;height: max-content;position: absolute;top: 50%;display: flex;z-index: 1;left: 3%;flex-direction: column;padding: 45px 20px;justify-content: center;align-items: center;border-radius: 8px;overflow: hidden;background: #242323;")
+				span.innerHTML += setbox
+				document.getElementById('form').append(span)
+				document.getElementById('passbox').onclick =()=>{
+					var span1 = document.createElement('span1')
+					span1.setAttribute('id',"Password Span")
+					span1.setAttribute('style','position: absolute;width: max-content;height: max-content;padding: 50px;background: #242020;z-index: 2;left: 11%;top: 30%;color: #ff3333;border-radius: 25px;filter: drop-shadow(2px 4px 6px black);')
+					span1.innerHTML+= passSpan;
+					document.getElementById('form').append(span1);
+					if(document.getElementById('back') !== null){
+						document.getElementById('back').onclick =()=>{
+							document.getElementById('Password Span').remove()
+						}
+					}
+					document.getElementById('updatePass').onclick=()=>{
+						if(document.getElementById('passwordn').value == document.getElementById('passwordc').value){
+							fcc = cc[0];
+							for (let i = 1; i < fcc.length; i++) {
+							 if(' ' + fcc[i].name.toUpperCase() === document.getElementById('name').innerText.toUpperCase()){
+								 var mname = document.getElementById('name').innerText.toUpperCase();
+								 mname = mname.slice(1,mname.length);
+								 firebase.database().ref('Employee/'+ i).set({
+									 name: mname,
+									 pass: document.getElementById('passwordn').value	
+								   })
+								   .then(fcc=[])
+								   .then(alert('Succesfully Updated'))
+								 
+							 }
+							}
+						}
+						else{
+							alert('Check Your Confirm Password')
+						}
+						
+					}
+				}
+				document.getElementById('logout').onclick=()=>{
+					location.reload()
+				}
 			}
 			document.getElementById('submit').style.display='block'
 		}
@@ -440,6 +429,7 @@ function logallthings(){
 				if(document.getElementById('attaSpan') !== null){
 					document.getElementById('attaSpan').remove()
 				}
+				document.getElementById('Get List').innerText = 'Loading ....'
 				const dbref = ref(db);
  var a = (new Date().getFullYear()+'-'+(parseInt(new Date().getMonth())+1)+'-'+new Date().getDate()).toString()
  var m = parseInt(document.getElementById('month').value)
@@ -478,6 +468,7 @@ function logallthings(){
         }
         tr.append(td)
         document.getElementById('table').querySelector('tbody').append(tr)
+		document.getElementById('Get List').innerText = 'Get List'
       }
 	  
       function exportTableToExcel(tableID, filename = ''){
@@ -516,7 +507,7 @@ function logallthings(){
     
     }
     else{
-        console.log('no')
+        alert('No Data Found.')
     }
  })
 			}
@@ -592,7 +583,12 @@ document.getElementById('calenderbtn').onclick=()=>{
 							on: document.getElementById('loginTime').value,
 						})
 						.then(()=>{
-							alert('submit')
+							swal({
+			title: "Good job!",
+			text: "Log In Time Submited Sucessfully",
+			icon: "success",
+		  })
+		  
 							document.getElementById('logTimeSubmit').innerText = 'Submit'
 							document.getElementById('logTimeSubmit').style.display='block'
 						})
@@ -603,7 +599,12 @@ document.getElementById('calenderbtn').onclick=()=>{
 						on: document.getElementById('loginTime').value,
 					})
 					.then(()=>{
-						alert('submit')
+						swal({
+			title: "Good job!",
+			text: "Log In Time Submited Sucessfully",
+			icon: "success",
+		  })
+		  
 						document.getElementById('logTimeSubmit').innerText = 'Submit'
 							document.getElementById('logTimeSubmit').style.display='block'
 					})
@@ -636,7 +637,12 @@ document.getElementById('calenderbtn').onclick=()=>{
 							off: document.getElementById('logoutTime').value
 						})
 						.then(()=>{
-							alert('submit')
+							swal({
+			title: "Good job!",
+			text: "Log Out Time Submited Sucessfully",
+			icon: "success",
+		  })
+		  
 							document.getElementById('logTimeSubmit').innerText = 'Submit'
 							document.getElementById('logTimeSubmit').style.display='block'
 							document.getElementById('logTimeSubmit').innerText = 'Submit'
@@ -647,7 +653,12 @@ document.getElementById('calenderbtn').onclick=()=>{
 						off: document.getElementById('logoutTime').value
 					})
 					.then(()=>{
-						alert('submit')
+						swal({
+			title: "Good job!",
+			text: "Log Out Time Submited Sucessfully",
+			icon: "success",
+		  })
+		  
 						document.getElementById('logTimeSubmit').innerText = 'Submit'
 						document.getElementById('logTimeSubmit').style.display='block'
 						
