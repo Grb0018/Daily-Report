@@ -205,3 +205,66 @@ color: black;
 margin: 10px 25%;
 ">Get List</button>
 `
+
+const setbox = `
+<span id="passbox" style="
+width: 100%;
+height: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: #242323;
+border-bottom: 1px solid #db2424;
+color: #c7c7c7;
+filter: drop-shadow(2px 4px 6px black);
+">
+Password Change
+</span>
+<span id="imagebox" style="
+width: 100%;
+background-color: #242323;
+height: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-bottom: 1px solid #db2424;
+color: #c7c7c7;
+filter: drop-shadow(2px 4px 6px black);
+">Profile Image Change</span>
+<span id="logout" style="
+width: 100%;
+background-color: #242323;
+height: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #c7c7c7;
+filter: drop-shadow(2px 4px 6px black);
+">Log Out</span>
+`
+
+const passSpan = `
+    <p id="back" style="
+    border-radius: 6px;
+    padding: 10px;
+    width: max-content;
+    background: white;
+    margin-bottom: 10px;
+">&lt;</p>
+    <p>New Password</p>
+<input type="password" id="passwordn" style="
+    margin-bottom: 35px;
+">
+<br>
+<br>
+<p>Confirm Password</p>
+<input type="password" id="passwordc">
+<br><br>
+<button id="updatePass" style="
+    padding: 6px;
+    border-radius: 6px;
+    background: #938888;
+    border: 0;
+    color: antiquewhite;
+    box-shadow: 0px 0px 10px black;
+">Password Update</button>`
