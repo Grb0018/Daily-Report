@@ -212,6 +212,7 @@ cursor: pointer;
     border-bottom-left-radius: 1vw;
     align-content: flex-start;
     align-items: center;
+    margin-bottom: 35px;
   }
   #contactdiv{
     overflow-y: scroll;
@@ -229,6 +230,7 @@ cursor: pointer;
     border-bottom-left-radius: 1vw;
     align-content: flex-start;
     align-items: center;
+    margin-bottom: 35px;
     
   }
   #face{
