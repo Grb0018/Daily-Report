@@ -163,3 +163,45 @@ text-align: center;">Works In Hand</h2><span style="
 "></span>  
 </span>
 </span>`
+
+const infoAttandance = `
+<select id="month" style="
+margin: 10px 15%;
+width: 70%;
+height: 12%;
+text-align: center;
+border: 0;
+border-radius: 6px;
+">
+    <option value="none">- Select Month -</option>
+    <option value="1">JAN</option>
+    <option value="2">FEB</option>
+    <option value="3">MAR</option>
+    <option value="4">APR</option>
+    <option value="5">MAY</option>
+    <option value="6">JUNE</option>
+    <option value="7">JULY</option>
+    <option value="8">AUG</option>
+    <option value="9">SEP</option>
+    <option value="10">OCT</option>
+    <option value="11">NOV</option>
+    <option value="12">DEC</option>
+</select>
+<select id="EmpName" style="
+margin: 10px 15%;
+width: 70%;
+height: 12%;
+text-align: center;
+border: 0;
+border-radius: 6px;
+">
+    <option value="none">- Select Employee -</option>
+    <option value="GOURAB">Gourab Das</option>
+</select>
+<button id="Get List" style="
+width: 50%;
+height: 28px;
+color: black;
+margin: 10px 25%;
+">Get List</button>
+`
