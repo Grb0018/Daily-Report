@@ -168,7 +168,7 @@ const infoAttandance = `
 <select id="month" style="
 margin: 10px 15%;
 width: 70%;
-height: 12%;
+height: 20%;
 text-align: center;
 border: 0;
 border-radius: 6px;
@@ -190,7 +190,7 @@ border-radius: 6px;
 <select id="EmpName" style="
 margin: 10px 15%;
 width: 70%;
-height: 12%;
+height: 20%;
 text-align: center;
 border: 0;
 border-radius: 6px;
@@ -200,7 +200,7 @@ border-radius: 6px;
 </select>
 <button id="Get List" style="
 width: 50%;
-height: 28px;
+height: 40px;
 color: black;
 margin: 10px 25%;
 ">Get List</button>
