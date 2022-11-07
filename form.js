@@ -197,6 +197,9 @@ border-radius: 6px;
 ">
     <option value="none">- Select Employee -</option>
     <option value="GOURAB">Gourab Das</option>
+    <option value="SUDIP MAHANTA">Sudip Mahanta</option>
+    <option value="SANDIP DAS">Sandip Das</option>
+    <option value="SWAPNA MONDAL">Swapna Mondal</option>
 </select>
 <button id="Get List" style="
 width: 50%;
