@@ -12,6 +12,9 @@ body{
   background-color: #fef2f4;
   overflow: hidden;
 }
+#setbox{
+  cursor:pointer
+}
 #form{
   height: 85%;
   display: flex;
@@ -143,14 +146,14 @@ box-shadow: inset -2px -11px 20px 4px #ffffff85;
   box-shadow: 0px 0px 50px #b9b9b9;
   }
 #face{
-width: 120px;
-border-top-left-radius: 40px;
-border-top-right-radius: 40px;
-border-bottom-left-radius: 40px;
-border-bottom-right-radius: 40px;
-margin: 2vw auto;
-z-index: 1;
-margin-bottom: -3vw;
+  height: 160px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  margin: 1vw auto;
+  z-index: 1;
+  margin-bottom: -3vw;
 }
 #settings{
 top: 24px;
