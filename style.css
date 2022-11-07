@@ -154,6 +154,8 @@ box-shadow: inset -2px -11px 20px 4px #ffffff85;
   margin: 1vw auto;
   z-index: 1;
   margin-bottom: -3vw;
+  background: white;
+  padding: 4px;
 }
 #settings{
 top: 24px;
