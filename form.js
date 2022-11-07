@@ -18,12 +18,12 @@ const form = `<form method="post" name="google-sheet" id="detail" style="transit
 "> *</text></label>
 <textarea id="Remarks" name="Remarks" required="" style="display: block;"></textarea>
 <input type="date" name="date" id="date">
-<label id="inlabel" style="margin-top:0">In Time<text style="    font-size: 33px;
+<label id="inlabel" style="margin-top:0">Start Time<text style="    font-size: 33px;
    position: relative;
    color: #dbdbdb;
 "> &#x2A</text></label>
 <input type="time" id="intime"  style="margin-top:0" name="In Time" required>
-<label id="outlabel" style="margin-top:0">Out Time<text style="    font-size: 33px;
+<label id="outlabel" style="margin-top:0">End Time<text style="    font-size: 33px;
    position: relative;
    color: #dbdbdb;
 "> &#x2A</text></label>
