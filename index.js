@@ -282,6 +282,7 @@ function KoyelPurkait(){
 					if(fcc[i].pass == document.getElementById('Password').value){
 						document.getElementById('login').style.display = 'none';
 						document.getElementById('form').innerHTML = basic + form;
+						document.getElementById('face').src= fcc[i].img
 						MenuSelecetion()
 						var date = new Date();
                         var currentDate = date.toISOString().slice(0,10);
@@ -346,7 +347,7 @@ function KoyelPurkait(){
 		}
 		
 	function setclick(){
-
+       if(document.getElementById('pass')!== null){
 		document.getElementById('pass').onclick = ()=>{
 			chk()
 			if(document.getElementById('passgiven').style.display==='block'){
@@ -359,6 +360,8 @@ function KoyelPurkait(){
 				},100)
 			}
 		}
+	   }
+	   if(document.getElementById('settings')!== null){
 		document.getElementById('settings').onclick = (e)=>{
 			if(e.target.getAttribute('src') === './img/close.png'){
 				e.target.setAttribute('src','./img/setting.png')
@@ -410,9 +413,45 @@ function KoyelPurkait(){
 				document.getElementById('logout').onclick=()=>{
 					location.reload()
 				}
+				document.getElementById('imagebox').onclick=()=>{
+					var span1 = document.createElement('span1')
+					span1.setAttribute('id',"Password Span")
+					span1.setAttribute('style','position: absolute;width: max-content;height: max-content;padding: 50px;background: #242020;z-index: 2;left: 11%;top: 30%;color: #ff3333;border-radius: 25px;filter: drop-shadow(2px 4px 6px black);')
+					span1.innerHTML+= dpSpan;
+					document.getElementById('form').append(span1);
+                    document.getElementById('updateimg').onclick=()=>{
+						if(document.getElementById('passwordn').value !==''){
+							var fr = new FileReader();
+							fr.onload = function () {
+								document.getElementById('face').src = fr.result;
+								fcc = cc[0];
+								for (let i = 1; i < fcc.length; i++) {
+									console.log(fr.result)
+										firebase.database().ref('Employee/'+ i).update({
+											img: fr.result
+										  })
+										  .then(fcc=[])
+										  .then(alert('Succesfully Updated Profile Picture'))
+										  .then(document.getElementById('Password Span').remove())
+								   }
+							}
+							fr.readAsDataURL(document.getElementById('passwordn').files[0]);
+							
+						}
+					}
+					if(document.getElementById('back') !== null){
+						document.getElementById('back').onclick =()=>{
+							document.getElementById('Password Span').remove()
+						}
+					}
+				}
+				
 			}
-			document.getElementById('submit').style.display='block'
-		}
+			if(document.getElementById('submit')!==null){
+				document.getElementById('submit').style.display='block'
+			}
+			
+		}}
 	}	
 	
 
@@ -574,7 +613,7 @@ function logallthings(){
 
 function MenuSelecetion(){
 document.getElementById('reportbtn').onclick=()=>{
-	document.getElementById('form').innerHTML = document.getElementById('form').innerHTML.slice(0,1047)
+	document.getElementById('form').innerHTML = document.getElementById('form').innerHTML.slice(0,(document.getElementById('face').src.length+966))
 	document.getElementById('form').innerHTML += form;
 	setclick()
 	MenuSelecetion()
@@ -592,7 +631,7 @@ document.getElementById('reportbtn').onclick=()=>{
 						else if(nameCon.includes('SUBHANKAR')){SubhankarDas()};
 }
 document.getElementById('calenderbtn').onclick=()=>{
-	document.getElementById('form').innerHTML = document.getElementById('form').innerHTML.slice(0,1047)
+	document.getElementById('form').innerHTML = document.getElementById('form').innerHTML.slice(0,(document.getElementById('face').src.length+966))
 	document.getElementById('form').innerHTML += TimeUpdateThing;
 	var name = document.getElementById('name').innerText.slice(1)
 	if(name.includes('SOURAS')){
@@ -725,13 +764,13 @@ document.getElementById('calenderbtn').onclick=()=>{
 
 }
 document.getElementById('supportbtn').onclick=()=>{
-	document.getElementById('form').innerHTML = document.getElementById('form').innerHTML.slice(0,1047)
+	document.getElementById('form').innerHTML = document.getElementById('form').innerHTML.slice(0,(document.getElementById('face').src.length+966))
 	document.getElementById('form').innerHTML += ContactUs;
 	setclick()
 	MenuSelecetion()
 }
 document.getElementById('homebtn').onclick=()=>{
-	document.getElementById('form').innerHTML = document.getElementById('form').innerHTML.slice(0,1047)
+	document.getElementById('form').innerHTML = document.getElementById('form').innerHTML.slice(0,(document.getElementById('face').src.length+966))
 	document.getElementById('form').innerHTML += workInHand;
 	setclick()
 	MenuSelecetion()
