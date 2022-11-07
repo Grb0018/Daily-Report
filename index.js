@@ -426,7 +426,7 @@ function KoyelPurkait(){
 								document.getElementById('face').src = fr.result;
 								fcc = cc[0];
 								for (let i = 1; i < fcc.length; i++) {
-									console.log(fr.result)
+									if(fcc[i].name.toUpperCase() === name){
 										firebase.database().ref('Employee/'+ i).update({
 											img: fr.result
 										  })
@@ -434,6 +434,7 @@ function KoyelPurkait(){
 										  .then(alert('Succesfully Updated Profile Picture'))
 										  .then(document.getElementById('Password Span').remove())
 								   }
+							     }
 							}
 							fr.readAsDataURL(document.getElementById('passwordn').files[0]);
 							
