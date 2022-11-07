@@ -268,3 +268,36 @@ const passSpan = `
     color: antiquewhite;
     box-shadow: 0px 0px 10px black;
 ">Password Update</button>`
+
+const dpSpan = `
+<p id="back" style="
+border-radius: 6px;
+padding: 10px;
+width: max-content;
+background: white;
+margin-bottom: 10px;
+">&lt;</p>
+<p style="
+margin-top: 10%;
+">Select Image</p>
+<br><hr style="
+width: 41%;
+">
+<input type="file" id="passwordn" accept="image/png, image/gif, image/jpeg" style="
+margin-bottom: 35px;
+background: none;
+border: 0;
+">
+<br>
+<br>
+
+
+
+<button id="updateimg" style="
+padding: 6px;
+border-radius: 6px;
+background: #938888;
+border: 0;
+color: antiquewhite;
+box-shadow: 0px 0px 10px black;
+">Update Now</button>`
