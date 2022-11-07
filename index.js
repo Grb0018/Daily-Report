@@ -26,8 +26,14 @@ function GourabDas(){
 			text: "Submited Sucessfully",
 			icon: "success",
 		  })
-		  .then(document.getElementsByClassName('swal-button-container')[0].onclick=()=>{location.reload()})
-		  .then(document.body.onclick=()=>{location.reload()})
+		
+		  .then(()=>{
+			var allinput = document.getElementById('detail').querySelectorAll('textarea')
+			allinput.forEach(element => {
+				element.value=''
+			});
+			document.getElementById('submit').style.display='block'
+		  })
 		
 		})
 		  .catch(error => console.log('Error!', error.message))
@@ -44,8 +50,13 @@ function SubhankarDas(){
 			text: "Submited Sucessfully",
 			icon: "success",
 		  })
-		  .then(document.getElementsByClassName('swal-button-container')[0].onclick=()=>{location.reload()})
-		  .then(document.body.onclick=()=>{location.reload()})
+		   .then(()=>{
+			var allinput = document.getElementById('detail').querySelectorAll('textarea')
+			allinput.forEach(element => {
+				element.value=''
+			});
+			document.getElementById('submit').style.display='block'
+		  })
 		
 		})
 		  .catch(error => console.log('Error!', error.message))
@@ -62,8 +73,13 @@ function IndranilChowdhury(){
 			text: "Submited Sucessfully",
 			icon: "success",
 		  })
-		  .then(document.getElementsByClassName('swal-button-container')[0].onclick=()=>{location.reload()})
-		  .then(document.body.onclick=()=>{location.reload()})
+		   .then(()=>{
+			var allinput = document.getElementById('detail').querySelectorAll('textarea')
+			allinput.forEach(element => {
+				element.value=''
+			});
+			document.getElementById('submit').style.display='block'
+		  })
 		
 		})
 		  .catch(error => console.log('Error!', error.message))
@@ -80,8 +96,13 @@ function AbhisekGhosh(){
 			text: "Submited Sucessfully",
 			icon: "success",
 		  })
-		  .then(document.getElementsByClassName('swal-button-container')[0].onclick=()=>{location.reload()})
-		  .then(document.body.onclick=()=>{location.reload()})
+		   .then(()=>{
+			var allinput = document.getElementById('detail').querySelectorAll('textarea')
+			allinput.forEach(element => {
+				element.value=''
+			});
+			document.getElementById('submit').style.display='block'
+		  })
 		
 		})
 		  .catch(error => console.log('Error!', error.message))
@@ -98,8 +119,13 @@ function SwapnaMondal(){
 			text: "Submited Sucessfully",
 			icon: "success",
 		  })
-		  .then(document.getElementsByClassName('swal-button-container')[0].onclick=()=>{location.reload()})
-		  .then(document.body.onclick=()=>{location.reload()})
+		   .then(()=>{
+			var allinput = document.getElementById('detail').querySelectorAll('textarea')
+			allinput.forEach(element => {
+				element.value=''
+			});
+			document.getElementById('submit').style.display='block'
+		  })
 		
 		})
 		  .catch(error => console.log('Error!', error.message))
@@ -116,8 +142,13 @@ function SudipMahanto(){
 			text: "Submited Sucessfully",
 			icon: "success",
 		  })
-		  .then(document.getElementsByClassName('swal-button-container')[0].onclick=()=>{location.reload()})
-		  .then(document.body.onclick=()=>{location.reload()})
+		   .then(()=>{
+			var allinput = document.getElementById('detail').querySelectorAll('textarea')
+			allinput.forEach(element => {
+				element.value=''
+			});
+			document.getElementById('submit').style.display='block'
+		  })
 		
 		})
 		  .catch(error => console.log('Error!', error.message))
@@ -135,8 +166,13 @@ function SandipDas(){
 			text: "Submited Sucessfully",
 			icon: "success",
 		  })
-		  .then(document.getElementsByClassName('swal-button-container')[0].onclick=()=>{location.reload()})
-		  .then(document.body.onclick=()=>{location.reload()})
+		   .then(()=>{
+			var allinput = document.getElementById('detail').querySelectorAll('textarea')
+			allinput.forEach(element => {
+				element.value=''
+			});
+			document.getElementById('submit').style.display='block'
+		  })
 		
 		})
 		//   .then(location.reload())
@@ -154,8 +190,13 @@ function SouvonikChakraborty(){
 			text: "Submited Sucessfully",
 			icon: "success",
 		  })
-		  .then(document.getElementsByClassName('swal-button-container')[0].onclick=()=>{location.reload()})
-		  .then(document.body.onclick=()=>{location.reload()})
+		   .then(()=>{
+			var allinput = document.getElementById('detail').querySelectorAll('textarea')
+			allinput.forEach(element => {
+				element.value=''
+			});
+			document.getElementById('submit').style.display='block'
+		  })
 		
 		})
 		  .catch(error => console.log('Error!', error.message))
@@ -172,8 +213,13 @@ function RahulAdak(){
 			text: "Submited Sucessfully",
 			icon: "success",
 		  })
-		  .then(document.getElementsByClassName('swal-button-container')[0].onclick=()=>{location.reload()})
-		  .then(document.body.onclick=()=>{location.reload()})
+		   .then(()=>{
+			var allinput = document.getElementById('detail').querySelectorAll('textarea')
+			allinput.forEach(element => {
+				element.value=''
+			});
+			document.getElementById('submit').style.display='block'
+		  })
 		
 		})
 		  .catch(error => console.log('Error!', error.message))
@@ -190,7 +236,13 @@ function KoyelPurkait(){
 			text: "You clicked the button!",
 			icon: "success",
 		  })
-		  .then(location.reload())
+		  .then(()=>{
+			var allinput = document.getElementById('detail').querySelectorAll('textarea')
+			allinput.forEach(element => {
+				element.value=''
+			});
+			document.getElementById('submit').style.display='block'
+		  })
 		
 		})
 		  .catch(error => console.log('Error!', error.message))
