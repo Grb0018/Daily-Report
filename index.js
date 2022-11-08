@@ -425,6 +425,7 @@ function KoyelPurkait(){
 							fr.onload = function () {
 								document.getElementById('face').src = fr.result;
 								fcc = cc[0];
+								const name = document.getElementById('Name').value.toUpperCase();
 								for (let i = 1; i < fcc.length; i++) {
 									if(fcc[i].name.toUpperCase() === name){
 										firebase.database().ref('Employee/'+ i).update({
@@ -434,7 +435,7 @@ function KoyelPurkait(){
 										  .then(alert('Succesfully Updated Profile Picture'))
 										  .then(document.getElementById('Password Span').remove())
 								   }
-							     }
+								}
 							}
 							fr.readAsDataURL(document.getElementById('passwordn').files[0]);
 							
@@ -803,4 +804,5 @@ const analytics = getAnalytics(app);
 import {getDatabase, ref, get,  set, child, update, remove} 
 from "https://www.gstatic.com/firebasejs/9.13.0/firebase-database.js";
 const db = getDatabase();
+
 
