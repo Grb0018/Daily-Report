@@ -11,6 +11,7 @@
 body{
   background-color: #fef2f4;
   overflow: hidden;
+  overflow-y: scroll;
 }
 #setbox{
   cursor:pointer
@@ -26,7 +27,7 @@ body{
   background: linear-gradient(90deg, rgb(223 223 223) 0%, rgb(255 244 244) 97%, rgb(229 229 229) 100%);
   box-shadow: inset -2px -11px 20px 4px #ffffff85;
   overflow: hidden;
-
+  min-height: 600px;
 }
 #form label{
   color: whitesmoke;
@@ -147,15 +148,15 @@ box-shadow: inset -2px -11px 20px 4px #ffffff85;
   }
 #face{
   height: 160px;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-  margin: 1vw auto;
-  z-index: 1;
-  margin-bottom: -3vw;
-  background: white;
-  padding: 4px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin: 1vw auto;
+    z-index: 1;
+    margin-bottom: -3vw;
+    background: white;
+    padding: 2px;
 }
 #settings{
 top: 24px;
@@ -255,7 +256,7 @@ cursor: pointer;
   box-shadow: inset -2px -11px 20px 4px #ffffff85;
   overflow: hidden;
   position: relative;
-  
+  min-height: 600px;
 
 }
 #info{
