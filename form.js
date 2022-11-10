@@ -57,7 +57,7 @@ border-radius: 15px;
 filter: drop-shadow(1px 1px 1px lightgrey) invert(1);transition: 1s;">
 </div>
 <time>12.10pm</time>
-<text>Hey<strong id="name"></strong></text>
+<text id="greetText">Hey<strong id="name"></strong></text>
 <img src="./img/Artstation-Character-Portrait-Demo-by-Anthony-Jones.png" id="face">
 <img src="./img/setting.png" alt="" id="settings">
 <button id="pass">Change</button>`
@@ -196,10 +196,10 @@ border: 0;
 border-radius: 6px;
 ">
     <option value="none">- Select Employee -</option>
-    <option value="GOURAB">Gourab Das</option>
     <option value="SUDIP MAHANTA">Sudip Mahanta</option>
     <option value="SANDIP DAS">Sandip Das</option>
     <option value="SWAPNA MONDAL">Swapna Mondal</option>
+    
 </select>
 <button id="Get List" style="
 width: 50%;
