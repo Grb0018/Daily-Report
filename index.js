@@ -19,6 +19,10 @@ function GourabDas(){
 	const scriptURL = 'https://script.google.com/macros/s/AKfycbziVQJk3lejFeRt15m1AigDxM0tIIt4Ijyq6r6ChofWDPCSs8Mq-KqXZYvknCYMjx2HJw/exec'
 	const form = document.forms['google-sheet']
 	form.addEventListener('submit', e => {
+		var textItem = document.createElement('text')
+		textItem.setAttribute('id','state')
+		textItem.innerHTML = ` Please Wait . We Are Submitting Your Data ...`
+		document.getElementById('greetText').append(textItem)
 		e.preventDefault();document.getElementById('submit').style.display = 'none'
 		fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 		.then(response =>{swal({
@@ -32,7 +36,8 @@ function GourabDas(){
 			allinput.forEach(element => {
 				element.value=''
 			});
-			document.getElementById('submit').style.display='block'
+			document.getElementById('submit').style.display='block';
+			document.getElementById('state').remove()
 		  })
 		
 		})
@@ -43,6 +48,10 @@ function SubhankarDas(){
 	const scriptURL = 'https://script.google.com/macros/s/AKfycbzE3nOOBUWQuqf5vIaP9jzJJdOzVwOhGqMOGPdn66ZyEg6rGTh9CqGcM9CU16RlFBRLEg/exec'
 	const form = document.forms['google-sheet']
 	form.addEventListener('submit', e => {
+		var textItem = document.createElement('text')
+		textItem.setAttribute('id','state')
+		textItem.innerHTML = ` Please Wait . We Are Submitting Your Data ...`
+		document.getElementById('greetText').append(textItem)
 		e.preventDefault();document.getElementById('submit').style.display = 'none'
 		fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 		.then(response =>{swal({
@@ -56,6 +65,7 @@ function SubhankarDas(){
 				element.value=''
 			});
 			document.getElementById('submit').style.display='block'
+			document.getElementById('state').remove()
 		  })
 		
 		})
@@ -66,6 +76,10 @@ function IndranilChowdhury(){
 	const scriptURL = 'https://script.google.com/macros/s/AKfycbyPcUtchZHfPY4eiYkRkTaYwUaJwm8OaFOEVszfz2KNiTSVEXXv0j0Mn3cxCILHIgAR5w/exec'
 	const form = document.forms['google-sheet']
 	form.addEventListener('submit', e => {
+		var textItem = document.createElement('text')
+		textItem.setAttribute('id','state')
+		textItem.innerHTML = ` Please Wait . We Are Submitting Your Data ...`
+		document.getElementById('greetText').append(textItem)
 		e.preventDefault();document.getElementById('submit').style.display = 'none'
 		fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 		.then(response =>{swal({
@@ -79,6 +93,7 @@ function IndranilChowdhury(){
 				element.value=''
 			});
 			document.getElementById('submit').style.display='block'
+			document.getElementById('state').remove()
 		  })
 		
 		})
@@ -89,6 +104,10 @@ function AbhisekGhosh(){
 	const scriptURL = 'https://script.google.com/macros/s/AKfycbzmbzpl12qWwaLzqh2qfEh32Qx92CtufO-Eco4huAd5YHkXLudttfNqnXDIymZl6KJY2g/exec'
 	const form = document.forms['google-sheet']
 	form.addEventListener('submit', e => {
+		var textItem = document.createElement('text')
+		textItem.setAttribute('id','state')
+		textItem.innerHTML = ` Please Wait . We Are Submitting Your Data ...`
+		document.getElementById('greetText').append(textItem)
 		e.preventDefault();document.getElementById('submit').style.display = 'none'
 		fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 		.then(response =>{swal({
@@ -102,6 +121,7 @@ function AbhisekGhosh(){
 				element.value=''
 			});
 			document.getElementById('submit').style.display='block'
+			document.getElementById('state').remove()
 		  })
 		
 		})
@@ -112,6 +132,10 @@ function SwapnaMondal(){
 	const scriptURL = 'https://script.google.com/macros/s/AKfycbwUAUXB1JZ6Y3i32HuyFrcsw-p3VClnEiiuVgaL7gc8nkvGfoEZBWNKw3ARJcKkbi7yEQ/exec'
 	const form = document.forms['google-sheet']
 	form.addEventListener('submit', e => {
+		var textItem = document.createElement('text')
+		textItem.setAttribute('id','state')
+		textItem.innerHTML = ` Please Wait . We Are Submitting Your Data ...`
+		document.getElementById('greetText').append(textItem)
 		e.preventDefault();document.getElementById('submit').style.display = 'none'
 		fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 		  .then(response =>{swal({
@@ -125,6 +149,7 @@ function SwapnaMondal(){
 				element.value=''
 			});
 			document.getElementById('submit').style.display='block'
+			document.getElementById('state').remove()
 		  })
 		
 		})
@@ -135,6 +160,10 @@ function SudipMahanto(){
 	const scriptURL = 'https://script.google.com/macros/s/AKfycbwaQ2s9xYK-PXBNJzb2VRalWMIQN9B3HP0jZCliuFRCvNw6_1k99KqdYDHk2_67Ze0HlQ/exec'
 	const form = document.forms['google-sheet']
 	form.addEventListener('submit', e => {
+		var textItem = document.createElement('text')
+		textItem.setAttribute('id','state')
+		textItem.innerHTML = ` Please Wait . We Are Submitting Your Data ...`
+		document.getElementById('greetText').append(textItem)
 		e.preventDefault();document.getElementById('submit').style.display = 'none'
 		fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 		  .then(response =>{swal({
@@ -148,6 +177,7 @@ function SudipMahanto(){
 				element.value=''
 			});
 			document.getElementById('submit').style.display='block'
+			document.getElementById('state').remove()
 		  })
 		
 		})
@@ -159,6 +189,10 @@ function SandipDas(){
 	const scriptURL = 'https://script.google.com/macros/s/AKfycbyXkXntJJAjosUzs4o4IRTKWo9oXl0mYhrDwo4CFThpb3QpaMGD0c-P75jtELi6iyDdCw/exec'
 	const form = document.forms['google-sheet']
 	form.addEventListener('submit', e => {
+		var textItem = document.createElement('text')
+		textItem.setAttribute('id','state')
+		textItem.innerHTML = ` Please Wait . We Are Submitting Your Data ...`
+		document.getElementById('greetText').append(textItem)
 		e.preventDefault();document.getElementById('submit').style.display = 'none'
 		fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 		  .then(response =>{swal({
@@ -172,6 +206,7 @@ function SandipDas(){
 				element.value=''
 			});
 			document.getElementById('submit').style.display='block'
+			document.getElementById('state').remove()
 		  })
 		
 		})
@@ -183,6 +218,10 @@ function SouvonikChakraborty(){
 	const scriptURL = 'https://script.google.com/macros/s/AKfycbyvIhBPrb1KfTHwi-ysQvwQ4YiuIGg4wl6R0NQq5ua-lguqS_3rUd575gOD5X9t1Wvk0g/exec'
 	const form = document.forms['google-sheet']
 	form.addEventListener('submit', e => {
+		var textItem = document.createElement('text')
+		textItem.setAttribute('id','state')
+		textItem.innerHTML = ` Please Wait . We Are Submitting Your Data ...`
+		document.getElementById('greetText').append(textItem)
 		e.preventDefault();document.getElementById('submit').style.display = 'none'
 		fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 		  .then(response =>{swal({
@@ -196,6 +235,7 @@ function SouvonikChakraborty(){
 				element.value=''
 			});
 			document.getElementById('submit').style.display='block'
+			document.getElementById('state').remove()
 		  })
 		
 		})
@@ -206,6 +246,10 @@ function RahulAdak(){
 	const scriptURL = 'https://script.google.com/macros/s/AKfycbzI5A_J2zdgYtYZcDzJG5xdd5q-vqQoVw2c8Rg416NtYTjrFrJOVXDh2nQIWzAyJCP_8w/exec'
 	const form = document.forms['google-sheet']
 	form.addEventListener('submit', e => {
+		var textItem = document.createElement('text')
+		textItem.setAttribute('id','state')
+		textItem.innerHTML = ` Please Wait . We Are Submitting Your Data ...`
+		document.getElementById('greetText').append(textItem)
 		e.preventDefault();document.getElementById('submit').style.display = 'none'
 		fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 		  .then(response =>{swal({
@@ -219,6 +263,7 @@ function RahulAdak(){
 				element.value=''
 			});
 			document.getElementById('submit').style.display='block'
+			document.getElementById('state').remove()
 		  })
 		
 		})
@@ -229,6 +274,10 @@ function KoyelPurkait(){
 	const scriptURL = 'https://script.google.com/macros/s/AKfycbwqseqwU0EMyPtwnBEXD8bHr-Kz9v643q0RKOeK2bhoJ5V02ahr_0rLpRZ4OgJVF3ti9w/exec'
 	const form = document.forms['google-sheet']
 	form.addEventListener('submit', e => {
+		var textItem = document.createElement('text')
+		textItem.setAttribute('id','state')
+		textItem.innerHTML = ` Please Wait . We Are Submitting Your Data ...`
+		document.getElementById('greetText').append(textItem)
 		e.preventDefault();document.getElementById('submit').style.display = 'none'
 		fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 		  .then(response =>{swal({
@@ -242,6 +291,7 @@ function KoyelPurkait(){
 				element.value=''
 			});
 			document.getElementById('submit').style.display='block'
+			document.getElementById('state').remove()
 		  })
 		
 		})
@@ -270,7 +320,6 @@ function KoyelPurkait(){
 			var leadsRef = firebase.database().ref();
 			leadsRef.on('value', function(snapshot) {
 				snapshot.forEach(function(childSnapshot) {
-					console.log(childSnapshot.val())
 					cc.push(childSnapshot.val())
 		  })})
 		}
@@ -303,7 +352,7 @@ function KoyelPurkait(){
 						document.getElementById('name').parentElement.innerHTML += greet ;
 						document.getElementById('agent').value = name;
 						var nameCon = name;
-						if(nameCon.includes('GOURAB')){GourabDas();console.log('o')}
+						if(nameCon.includes('GOURAB')){GourabDas()}
 						else if(nameCon.includes('KOYEL')){KoyelPurkait()}
 						else if(nameCon.includes('RAHUL')){RahulAdak()}
 						else if(nameCon.includes('SOUVONIK')){SouvonikChakraborty()}
@@ -529,15 +578,12 @@ function logallthings(){
  var emp = document.getElementById('EmpName').value
  get(child(dbref,"/Attandance/"+ emp+'/'+m)).then((snapshot)=>{
     if(snapshot.exists()){
-        console.log('op')
         var all=[]  
       snapshot.forEach(function(childSnapshot) {
         all.push({
             date: childSnapshot.key,
             value: childSnapshot.val()
         })
-      //  all.push(childSnapshot.val())
-        console.log(all)
       });
 	  var span = document.createElement('span')
 	  span.setAttribute('id','attaSpan')
@@ -621,7 +667,7 @@ document.getElementById('reportbtn').onclick=()=>{
 	MenuSelecetion()
 	document.getElementById('sdate').value = new Date()
 	var nameCon = document.getElementById('name').innerText;
-						if(nameCon.includes('GOURAB')){GourabDas();console.log('o')}
+						if(nameCon.includes('GOURAB')){GourabDas()}
 						else if(nameCon.includes('KOYEL')){KoyelPurkait()}
 						else if(nameCon.includes('RAHUL')){RahulAdak()}
 						else if(nameCon.includes('SOUVONIK')){SouvonikChakraborty()}
@@ -651,7 +697,6 @@ document.getElementById('calenderbtn').onclick=()=>{
 			var a = new Date().getFullYear()+'-'+(parseInt(new Date().getMonth())+1)+'-'+new Date().getDate()
 			var m = parseInt(new Date().getMonth())+1
 			var all=[]
-			console.log('start')
 			function timeNow(i) {
 				var d = new Date(),
 				  h = (d.getHours()<10?'0':'') + d.getHours(),
@@ -665,7 +710,6 @@ document.getElementById('calenderbtn').onclick=()=>{
 					snapshot.forEach(function(childSnapshot) {
 						all.push(childSnapshot.val())
 					  });
-					  console.log(all)
 					  if(all[all.length-1].off == null){
 						alert('You Dont Have Previous Log Out Time')
 						document.getElementById('logTimeSubmit').innerText = 'Submit'
@@ -712,7 +756,6 @@ document.getElementById('calenderbtn').onclick=()=>{
 			var a = new Date().getFullYear()+'-'+(parseInt(new Date().getMonth())+1)+'-'+new Date().getDate()
 			var m = parseInt(new Date().getMonth())+1
 			var all=[]
-			console.log('start out')
 			function timeNow(i) {
 				var d = new Date(),
 				  h = (d.getHours()<10?'0':'') + d.getHours(),
@@ -725,7 +768,6 @@ document.getElementById('calenderbtn').onclick=()=>{
 					snapshot.forEach(function(childSnapshot) {
 						all.push(childSnapshot.val())
 					  });
-					  console.log(all[all.length-1].off)
 						update(ref(db, "Attandance/"+ name+'/'+m+'/'+ a+'/'+(all.length-1)),{
 							off: document.getElementById('logoutTime').value
 						})
