@@ -661,7 +661,7 @@ function logallthings(){
 
 function MenuSelecetion(){
 document.getElementById('reportbtn').onclick=()=>{
-	document.getElementById('form').innerHTML = document.getElementById('form').innerHTML.slice(0,(document.getElementById('face').src.length+966))
+	document.getElementById('form').innerHTML = document.getElementById('form').innerHTML.slice(0,(document.getElementById('face').src.length+981))
 	document.getElementById('form').innerHTML += form;
 	setclick()
 	MenuSelecetion()
@@ -679,7 +679,7 @@ document.getElementById('reportbtn').onclick=()=>{
 						else if(nameCon.includes('SUBHANKAR')){SubhankarDas()};
 }
 document.getElementById('calenderbtn').onclick=()=>{
-	document.getElementById('form').innerHTML = document.getElementById('form').innerHTML.slice(0,(document.getElementById('face').src.length+966))
+	document.getElementById('form').innerHTML = document.getElementById('form').innerHTML.slice(0,(document.getElementById('face').src.length+981))
 	document.getElementById('form').innerHTML += TimeUpdateThing;
 	var name = document.getElementById('name').innerText.slice(1)
 	if(name.includes('SOURAS')){
@@ -808,13 +808,13 @@ document.getElementById('calenderbtn').onclick=()=>{
 
 }
 document.getElementById('supportbtn').onclick=()=>{
-	document.getElementById('form').innerHTML = document.getElementById('form').innerHTML.slice(0,(document.getElementById('face').src.length+966))
+	document.getElementById('form').innerHTML = document.getElementById('form').innerHTML.slice(0,(document.getElementById('face').src.length+981))
 	document.getElementById('form').innerHTML += ContactUs;
 	setclick()
 	MenuSelecetion()
 }
 document.getElementById('homebtn').onclick=()=>{
-	document.getElementById('form').innerHTML = document.getElementById('form').innerHTML.slice(0,(document.getElementById('face').src.length+966))
+	document.getElementById('form').innerHTML = document.getElementById('form').innerHTML.slice(0,(document.getElementById('face').src.length+981))
 	document.getElementById('form').innerHTML += workInHand;
 	setclick()
 	MenuSelecetion()
